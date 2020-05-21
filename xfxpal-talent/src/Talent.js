@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { Icon, Image, Card, Header } from 'semantic-ui-react';
 
@@ -97,6 +97,9 @@ const shuffleArr = (array) => {
 };
 
 export default () => {
+    useEffect(() => {
+        document.title = 'FXPAL Talent'
+    })
     shuffleArr(peopleJson);
     return (
         <>
